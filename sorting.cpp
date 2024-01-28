@@ -65,6 +65,7 @@ int main(){
     // SelectionSort(arr, 5);
     // BubbleSort(arr, 5);
     // insertionSort(arr, 5);
+    
     for (int i = 0; i < 5; i++)
     {
         cout<<" "<<arr[i];
