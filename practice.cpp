@@ -1,5 +1,3 @@
-#include<iostream>
-using namespace std;
-int main(){
-    cout<<"hello";
-}
+// write a program 
+//  count 3
+
