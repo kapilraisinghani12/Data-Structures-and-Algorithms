@@ -14,7 +14,7 @@ class ListNode{
 
 };
 
-void InsertAtHead(ListNode* head, int data){
+void InsertAtHead(ListNode* &head, int data){
  
  ListNode* temp = new ListNode(data);
  temp->next = head;
@@ -43,6 +43,7 @@ void pop(ListNode* &head){
     
 
 }
+
 void print(ListNode* head){
     ListNode* temp = head;
     while (temp->next!=NULL)

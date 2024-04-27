@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 void reachDest(int src, int dest){
@@ -35,15 +36,31 @@ int sayDigits(int n){
     int digit = n%10;
     n = n/10;
     sayDigits(n);
-    cout<<arr[digit]<<" ";
+    cout<<arr[digit]<<" "; 
 }
+bool checkPrime(int n){
+    if(n == 2){
+        return true;
+    }
+    for(int i = 3; i< n; i++){
+        if(n%i == 0){
+            return false;
+        }
+    }
+    return true;
+
+   
+}
+
 
 int main(){
     // int src = 1;
     // int dest = 10;
     // reachDest(src, dest);
+    string s = to_string(1002) ;
 
-    int n;
-    cin>> n;
-    sayDigits(n);
-}
+    cout<<s[3];
+//     int n;
+//     cin>> n;
+//     cout<<checkPrime(n);
+ }
