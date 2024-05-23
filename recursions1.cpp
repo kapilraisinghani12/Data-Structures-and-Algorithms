@@ -11,14 +11,18 @@ using namespace std;
     numOfNs(n, cnt-1);
 
  }
- int factorial(int n){
+ int fact(int n){
             
             if(n == 0){
                 return 1;
             }
 
-         return n*factorial(n-1);
+         return n*fact(n-1);
  }
+  int nCr(int n, int r) {
+        int ans = fact(n) / (fact(n - r) * fact(r));
+        return ans;
+    }
 
 int powOfTwo(int n){
     //base condition
@@ -37,11 +41,10 @@ int printCount(int n){
 }
 
 int main(){
-    int n;
-    cin>>n;
+   
     // cout<<factorial(n)<<endl;
     
-    cout<<factorial(5)<<endl;
+    cout<<nCr(4,2)<<endl;
 
     return 0;
 }
