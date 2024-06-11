@@ -62,7 +62,7 @@ void insertionSort(int arr[], int n){
 int main(){
 
     int arr[5]={30,52,77,1,2};
-    // SelectionSort(arr, 5);
+    SelectionSort(arr, 5);
     // BubbleSort(arr, 5);
     // insertionSort(arr, 5);
     
