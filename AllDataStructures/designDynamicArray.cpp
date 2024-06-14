@@ -41,6 +41,7 @@ a.pushElement(1);
 a.pushElement(2);
 a.pushElement(3);
 a.pushElement(4);
+a.pushElement(4);
 a.pushElement(8);
 cout<<a.viewRear()<<endl;
 a.printData();
