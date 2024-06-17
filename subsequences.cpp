@@ -39,7 +39,7 @@ int n;
 cin>>n;
 int arr[n];
 for(int i = 0 ; i<n ; i++){
-    arr[i] = i;  //[3,1,2]
+    cin>>arr[i];  //[3,1,2]
 }
 vector<int> ds;
 printSubsequences(0, arr, ds, n);
@@ -49,7 +49,7 @@ cout<<"No. of subsequences"<<count<<endl;
 
 /*
 Time complexity - O(n*2^n) - 2^n no. of calls and n for printing
-Space complexity - O(n) - Stack space.
+Space complexity - O(n) - Stack space
 */
 
 
