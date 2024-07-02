@@ -25,7 +25,7 @@ void printSubsequences(int ind, int arr[], vector<int> &ds, int n){
         count++;
         return;
     }
-    // take an index
+    // take an index      
     ds.push_back(arr[ind]);
     printSubsequences(ind+1, arr, ds, n);
     //do not take the index
